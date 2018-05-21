@@ -6,6 +6,7 @@ import { hot } from 'react-hot-loader';
 
 import * as actionCreators from './actions/index'
 import Header from './components/presenters/header'
+import { generateRandomTableEntry } from './helpers/tableParser'
 
 class App extends Component {
 	constructor(props) { 
@@ -21,13 +22,11 @@ class App extends Component {
 
 	render() {
 		let state = { ...this.props }
-		console.log('app', state)
-		
 
 		return (
 			<div>
 				<Header className="header__app" value={ state.title.entry } />
-				<p>Nothing to see here, please move along!</p>
+				<p>{ generateRandomTableEntry() }</p>
 				<button onClick={ state.onButtonClick }>Click Me</button>
 			</div>
 		);

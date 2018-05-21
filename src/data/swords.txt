@@ -1,0 +1,216 @@
+;Quality
+5,normal
+3,bloodstained
+3,dull
+3,razor-sharp
+3,rusted
+3,tarnished
+2,magical
+2,sinister
+2,blunted
+2,finely-crafted
+2,neglected
+2,rust-flecked
+2,well-used
+1,holy
+1,battle-worn
+1,clean
+1,master-crafted
+1,wicked-looking
+
+;SwordStart
+1,[Quality] [HiltedSwordType]. [SwordBladeStyle] [Pommel] [Quillons] [Scabbard]
+
+;HiltedSwordType
+100,longsword
+50,short sword
+12,scimitar
+10,falchion
+10,greatsword
+5,mercurial longsword
+5,two-bladed sword
+4,broad-blade shortsword
+4,great falchion
+4,khopesh
+3,fullblade
+2,butterfly sword
+2,elven thinblade
+2,fingerblade
+2,flamberge
+2,gladius
+2,great scimitar
+2,mercurial greatsword
+2,sapara
+1,claymore
+1,crystalline sword
+1,diamond blade
+1,double scimitar
+1,elven lightblade
+1,gnome swordcatcher
+1,gyrspike
+1,jovar
+1,lynxpaw
+1,straightblade
+
+;BasketedSwordType
+20,broadsword
+50,rapier
+20,scimitar
+20,saber
+1,elven courtblade
+2,elven lightblade
+3,elven thinblade
+9,quickblade rapier
+5,cutlass
+
+;combined
+1,alloyed with
+1,blended with
+1,combined with
+1,forged together with
+1,fused with
+1,intermingled with
+1,layered with
+1,melded with
+1,mixed with
+1,with a coating of
+1,with a core of
+
+;Scabbard
+12,There is a scabbard.
+5,There is no scabbard present.
+2,There is a simple scabbard.
+1,There is an ornate scabbard.
+
+;SwordBladeStyle
+30, 
+2,The blade tapers, widens, and re-tapers in a “leaf” shape.
+1,A blood groove runs the length of the blade on each side.
+1,The blade is of Kris style.
+1,The blade is serrated, giving it a wicked appearance.
+
+;Pommel
+10,A small rounded pommel provides balance.
+5,A brass cap with 6 evenly spaced studs serves as the pommel.
+5,The pommel is in the shape of [PommelShapes].
+4,The large, round pommel is stamped with symbols.
+3,The pommel consists only of a lanyard ring.
+2,The pommel contains a gem.
+2,The pommel is of “skullcrusher” shape, allowing its use as a bludgeoning weapon.
+1,The hilt ends in a sharp blade where a pommel would normally be.
+1,The pommel is in the shape of [PommelShapes] and screws off to reveal a hollow hilt. 
+
+;Quillons
+4,The simple [QuillonShape] quillons each end in [PommelShapes], and the crossbar has an engraving of the same in a circle.
+3,The [QuillonShape] quillons are unremarkable, but the crossbar is stamped with symbols.
+2,The [QuillonShape] quillons and center of the crossbar on each side contain matching gemstones.
+2,The simple [QuillonShape] quillons each end in [PommelShapes], and the crossbar contains a gem.
+2,The simple [QuillonShape] quillons each end in [PommelShapes], and the crossbar is stamped with symbols.
+1,Four quillons shaped like talons surround the blade.
+1,One quillon arches upward, the other downward, forming an S shape.
+1,The [QuillonShape] quillons end in large circles, which match the crossbar circle. All are stamped with symbols.
+1,The [QuillonShape] quillons protrude about two inches on either side, then turn sharply downward for about 5 inches.
+1,The quillons and crossbar are engraved in a leaf motif.
+1,The quillons and crossbar form a five-pointed star pointing down toward the hilt.
+1,The quillons and crossbar form a five-pointed star pointing towards the blade.
+1,The quillons are in the shape of serpent necks and heads.
+1,The quillons are larger than normal and each precisely matches the main hilt and pommel.
+1,The quillons are shaped like dragon wings, and the blade emerges from a stylized dragon head.
+1,The quillons are shaped like eagle talons, each clutching a sphere. 
+1,The quillons are unremarkable, but the crossbar is shaped like a scalloped seashell.
+1,There are arched quillons protruding toward the blade end.
+1,There are straight [QuillonShape] quillons at the crossbar with a large ring protruding from one of the blade sides.
+1,There are straight, unremarkable [QuillonShape] quillons at the crossbar.
+1,This sword has no quillons; the blade widens towards the base, then tapers as it passes straight into the hilt wrapping.
+
+;QuillonShape
+6,round
+3,square
+3,triangular
+1,hexagonal
+1,octagonal
+1,pentagonal
+1,sharpened
+1,tapered flat
+
+;Basket
+1,The basket [tb]
+
+;tb
+1,has a leaf motif.
+1,has a scalloped, clamshell appearance.
+1,has the appearance of spiderwebs.
+1,is a fine mesh.
+1,is a short dome coming down over the grip, and does not connect to the pommel.
+1,is composed of several interweaving thick wires.
+1,is composed of thick wires stretching from the crossbar to the pommel.
+1,is fancy, being composed of numerous twisting wires that interweave and extend into the area of the blade.
+1,is solid with engravings on it.
+1,is solid.
+
+;PommelShapes
+4,a clenched fist
+4,a crescent moon
+4,a horse’s head[PommelEyes]
+4,a serpent’s head[PommelEyes]
+4,a skull[PommelEyes]
+4,a stylized sun
+4,a wide scalloped seashell
+3,a cat’s head[PommelEyes]
+3,a chess piece
+3,a dog’s head[PommelEyes]
+3,a hand clutching a sphere
+3,a mermaid, her tail wrapping around the hilt[PommelEyes]
+3,a perched falcon[PommelEyes]
+3,a simple cone
+3,a smooth cylinder
+3,a spike 
+3,talons clutching a sphere
+3,the head of an armored knight in a crusader-style helmet (no face visible)
+2,a bull’s head
+2,a Dragon head with its mouth agape[PommelEyes]
+2,a five-pointed star
+2,a head with a strange-looking mask[PommelEyes]
+2,a lion’s head[PommelEyes]
+2,a monkey head[PommelEyes]
+2,a nude female figurehead from the torso up[PommelEyes]
+2,a nude female figurehead from the waist down[PommelEyes]
+2,a ram’s head[PommelEyes]
+2,a scorpion’s stinger
+2,a serpent’s head
+2,a spider astride an orb
+2,a wizard with a beard and pointy hat[PommelEyes]
+2,an eagle’s head[PommelEyes]
+2,an eyeball
+2,the head of a gruff-looking Dwarf[PommelEyes]
+2,the head of a helmeted man with a determined expression[PommelEyes]
+2,the head of a Human male, its visage frozen in horror[PommelEyes]
+2,the head of a wily-looking Elf[PommelEyes]
+1,a Beholder head[PommelEyes]
+1,a crystal prism
+1,a dodecahedron (d12)
+1,a fish head
+1,a pineapple
+1,a small crouching dragon[PommelEyes]
+1,a squatting toad[PommelEyes]
+1,an icosahedron (d20)
+1,the head of a snarling orc[PommelEyes]
+1,the head of an Illithid, its tentacles wrapping around the hilt[PommelEyes]
+
+;PommelEyes
+5, 
+1,, with eyes made out of small gemstones
+
+;RuneGlowChance
+8, 
+6,The inscription glows [bf]ly with a light [why]
+
+;bf
+1,bright
+1,faint
+
+;why
+1, if evil is nearby.
+1, if monsters are nearby.
+2, when creatures are nearby.
+2,.
