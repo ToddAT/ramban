@@ -1,3 +1,15 @@
+;main
+1,[DaggerStart] [Weapon.MilitaryIssueChance] [HistoryChance]
+4,[SwordStart] [Weapon.MilitaryIssueChance] [HistoryChance]
+
+;StartNoDescription
+2,[DaggerType]
+6,[HiltedSwordType]
+2,[BasketedSwordType]
+
+;DaggerStart
+1,[Quality] [DaggerType] that has a blade of [Utility.MetalWeapon] with a hilt wrapped in [SwordHiltWrapping]. [Pommel] [DecorMetal]
+
 ;Quality
 5,normal
 3,bloodstained
@@ -5,21 +17,38 @@
 3,razor-sharp
 3,rusted
 3,tarnished
-2,magical
-2,sinister
+2,<b>magical</b>
+2,<b>sinister</b>
 2,blunted
 2,finely-crafted
 2,neglected
 2,rust-flecked
 2,well-used
-1,holy
+1,<b>holy</b>
 1,battle-worn
 1,clean
 1,master-crafted
 1,wicked-looking
 
+;DaggerType
+10,dagger
+1,hunting knife
+1,katar
+1,kukri
+1,main-gauche
+1,parrying dagger
+1,poniard
+1,punching dagger
+1,sacrificial dagger
+1,stiletto
+1,trench knife
+1,wizard’s dagger
+
 ;SwordStart
-1,[Quality] [HiltedSwordType]. [SwordBladeStyle] [Pommel] [Quillons] [Scabbard]
+20,[Quality] [HiltedSwordType] that has a blade of [Utility.MetalWeapon] with a hilt wrapped in [SwordHiltWrapping]. [SwordBladeDecor] [SwordBladeStyle] [Pommel] [Quillons] [DecorMetal] [Scabbard]
+5,[Quality] [BasketedSwordType] that has a blade of [Utility.MetalWeapon] with a hilt wrapped in [SwordHiltWrapping]. [SwordBladeDecor] [SwordBladeStyle] [Pommel] [Basket] [DecorMetal] [Scabbard]
+4,[Quality] [HiltedSwordType] that has a blade composed of [Utility.MetalWeapon] [combined] [Utility.MetalDecor], with a hilt wrapped in [SwordHiltWrapping]. [SwordBladeDecor] [SwordBladeStyle] [Pommel] [Quillons] [DecorMetal] [Scabbard]
+1,[Quality] [BasketedSwordType] that has a blade composed of [Utility.MetalWeapon] [combined] [Utility.MetalDecor], with a hilt wrapped in [SwordHiltWrapping]. [SwordBladeDecor] [SwordBladeStyle] [Pommel] [Basket] [DecorMetal] [Scabbard]
 
 ;HiltedSwordType
 100,longsword
@@ -76,39 +105,80 @@
 1,with a coating of
 1,with a core of
 
+;SwordHiltWrapping
+30,[Utility.LeatherHide]
+10,[Utility.MetalDecor] wire
+5,[Utility.WoodWeapon] with [Utility.MetalDecor] rivets
+5,[Utility.LeatherHide] with [Utility.MetalDecor] wire
+2,[Utility.LeatherHide] with [Utility.MetalDecor] studs
+2,[Utility.HornIvory] with [Utility.MetalDecor] rivets
+1,[Utility.LeatherHide] <b>embedded with numerous small [Utility.GemType]s</b>
+
 ;Scabbard
-12,There is a scabbard.
+12,There is a scabbard of [st]
 5,There is no scabbard present.
-2,There is a simple scabbard.
-1,There is an ornate scabbard.
+2,There is a simple scabbard of [Utility.MetalHard].
+1,There is an ornate scabbard of [Utility.MetalDecor] inlaid with [Utility.Ornamental Stones].
+
+;st
+2,[Utility.Fur] fur with [Utility.LeatherHide] accents and [Utility.MetalDecor] trim.
+2,[Utility.LeatherHide] with [Utility.MetalDecor] accents.
+2,[Utility.MetalDecor] with [Dice.1d12] [Utility.RelativeSize] [Utility.GemQuality] [Utility.GemType] stones embedded in it.
+2,[Utility.WoodWeapon] wood inlaid with [Utility.HornIvory].
+1,[Utility.LeatherHide] with [Utility.Fur] fur trim.
+1,[Utility.MetalHard], painted with shiny [Color.dark] enamel.
+1,<b>[Utility.Chitin] chitin</b> with [Utility.LeatherHide] accents and [Utility.MetalDecor] trim.
+1,beaten [Utility.MetalSoft].
+
+;SwordBladeDecor
+20,
+16,The blade is decorated with [bdw]
+10,The blade is inscribed with the word(s) <b>“[Inscriptions.main]”</b> in [Inscriptions.Language]. <b>[RuneGlowChance]</b>
+6,The blade is inscribed with the name <b>[Weapon Names.main]</b>. <b>[RuneGlowChance]</b>
+3, an ornately decorated pentacle is carved above the hilt
+2,[SwordBladeDecor] [SwordBladeDecor]
+2,Serpentine runes run up and down the blade.
+2,The blade is dull and was probably intended only for display.
+2,The blade is painted with shiny [Color.dark] enamel.
+2,The dull blade is marked with symbols associated with [Secret Society Name.main] and was probably intended for ceremonial use by that organization.
+1,The blade has been carbonized with a flat [Color.dark] paint to keep it from reflecting light except along the edges.
+
+;bdw
+4,runes in [Utility.RuneLanguage] that convey the meaning <b>“[Inscriptions.main]”</b>. <b>[RuneGlowChance]</b>
+2,a flame motif.
+2,a lightning motif.
+2,a tangled animal motif.
+2,an etched depiction.
+2,etched serpents.
+2,knotwork.
 
 ;SwordBladeStyle
-30, 
+30,
 2,The blade tapers, widens, and re-tapers in a “leaf” shape.
 1,A blood groove runs the length of the blade on each side.
-1,The blade is of Kris style.
+1,The blade is of Kris style (wavy and serpentine).
 1,The blade is serrated, giving it a wicked appearance.
 
 ;Pommel
 10,A small rounded pommel provides balance.
 5,A brass cap with 6 evenly spaced studs serves as the pommel.
 5,The pommel is in the shape of [PommelShapes].
-4,The large, round pommel is stamped with symbols.
+4,The large, round pommel is stamped with [Utility.Symbols].
 3,The pommel consists only of a lanyard ring.
-2,The pommel contains a gem.
+2,The pommel contains a [Utility.RelativeSize] [Utility.GemQuality] [Utility.GemType].
 2,The pommel is of “skullcrusher” shape, allowing its use as a bludgeoning weapon.
 1,The hilt ends in a sharp blade where a pommel would normally be.
 1,The pommel is in the shape of [PommelShapes] and screws off to reveal a hollow hilt. 
 
 ;Quillons
 4,The simple [QuillonShape] quillons each end in [PommelShapes], and the crossbar has an engraving of the same in a circle.
-3,The [QuillonShape] quillons are unremarkable, but the crossbar is stamped with symbols.
-2,The [QuillonShape] quillons and center of the crossbar on each side contain matching gemstones.
-2,The simple [QuillonShape] quillons each end in [PommelShapes], and the crossbar contains a gem.
-2,The simple [QuillonShape] quillons each end in [PommelShapes], and the crossbar is stamped with symbols.
+3,The [QuillonShape] quillons are unremarkable, but the crossbar is stamped with [Utility.Symbols].
+2,The [QuillonShape] quillons and center of the crossbar on each side contain matching [Utility.RelativeSize] [Utility.GemQuality] [Utility.GemType] stones.
+2,The simple [QuillonShape] quillons each end in [PommelShapes], and the crossbar contains a [Utility.RelativeSize] [Utility.GemQuality] [Utility.GemType].
+2,The simple [QuillonShape] quillons each end in [PommelShapes], and the crossbar is stamped with [Utility.Symbols].
 1,Four quillons shaped like talons surround the blade.
 1,One quillon arches upward, the other downward, forming an S shape.
-1,The [QuillonShape] quillons end in large circles, which match the crossbar circle. All are stamped with symbols.
+1,The [QuillonShape] quillons end in large circles, which match the crossbar circle. All are stamped with [Utility.Symbols].
 1,The [QuillonShape] quillons protrude about two inches on either side, then turn sharply downward for about 5 inches.
 1,The quillons and crossbar are engraved in a leaf motif.
 1,The quillons and crossbar form a five-pointed star pointing down toward the hilt.
@@ -147,6 +217,10 @@
 1,is fancy, being composed of numerous twisting wires that interweave and extend into the area of the blade.
 1,is solid with engravings on it.
 1,is solid.
+
+;DecorMetal
+5,
+3,The decorative elements of the sword are composed of [Utility.MetalDecor].
 
 ;PommelShapes
 4,a clenched fist
@@ -198,12 +272,12 @@
 1,the head of an Illithid, its tentacles wrapping around the hilt[PommelEyes]
 
 ;PommelEyes
-5, 
-1,, with eyes made out of small gemstones
+5,
+1,, with eyes made out of small [Utility.GemType]s
 
 ;RuneGlowChance
-8, 
-6,The inscription glows [bf]ly with a light [why]
+8,
+6,The inscription glows [bf]ly with a [Color.hues] light [why]
 
 ;bf
 1,bright
@@ -212,5 +286,22 @@
 ;why
 1, if evil is nearby.
 1, if monsters are nearby.
-2, when creatures are nearby.
+2, when [Utility.CreatureTypes]s are nearby.
 2,.
+
+;HistoryChance
+5,
+1,[History]
+
+;History
+1,A careful examination reveals the initials of [Fantasy Male Military Hero.main] This weapon may once have been his.
+1,A scrap of parchment tells the story of the original owner: “[Delver Fate.story]”
+1,Although clearly a reproduction, it is modeled on a blade made famous by [Fantasy Male Military Hero.main]
+1,Although how it came to be here is unclear, this blade has a history of adventuring. [Delver Fate.story] In all likelihood, this was the weapon associated with that incident.
+1,It is clearly modeled on the descriptions of a weapon once owned by [Fantasy Male Military Hero.main]
+1,Something is known about the career of this blade’s former owner - [Delver Fate.story]
+1,The blade bears a small inscription stating that it was made for [Fantasy Male Military Hero.main]
+1,The weapon matches the description of a weapon that once belonged to [Fantasy Male Military Hero.main]
+1,The weapon was once owned by [Fantasy Male Military Hero.main]
+1,This blade was passed from father to son until it was given to [Fantasy Male Military Hero.main] The whereabouts of this weapon had been unknown since his death.
+1,This may well have been the legendary blade of [Fantasy Male Military Hero.main]

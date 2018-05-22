@@ -1,0 +1,552 @@
+;main
+1,[bright]
+1,[dull]
+1,[light]
+1,[dark]
+1,[metallic]
+1,[jeweltone]
+
+;bright
+2,pink
+6,red
+2,orange
+5,yellow
+2,lime green
+7,green
+2,sky blue
+6,blue
+2,lavender
+2,purple
+1,violet
+1,spring green
+1,fuchsia
+2,magenta
+2,vermilion
+2,cerulean
+4,scarlet
+3,crimson
+2,aqua
+1,chartreuse
+3,coral
+1,orchid
+2,salmon
+2,hot pink
+4,royal blue
+3,white
+2,blue-violet
+2,blue-green
+2,yellow-green
+2,yellow-orange
+2,red-orange
+2,red-violet
+1,neon blue
+1,neon red
+1,neon purple
+1,neon orange
+1,neon green
+1,neon yellow
+1,neon pink
+1,ultramarine
+1,citrine
+1,cerise
+
+;brightCap
+1,[bright]
+
+;dull
+10,gray
+2,charcoal
+3,brown
+3,burnt orange
+3,sand-colored
+2,olive green
+2,mustard yellow
+2,cream-colored
+3,black
+3,rose
+4,khaki
+1,ochre
+
+;dullCap
+1,[dull]
+
+;dark
+10,black
+7,gray
+3,charcoal
+2,midnight blue
+3,maroon
+3,pine green
+5,dark green
+3,crimson
+3,navy blue
+2,indigo
+7,dark brown
+2,umber
+5,blue-gray
+3,blue-black
+3,forest green
+3,green-brown
+2,burnt orange
+4,ebony
+3,brick red
+2,plum
+2,teal
+1,sienna
+1,sinopia
+1,coffee-colored
+1,carmine
+1,puce
+
+;darkCap
+1,[dark]
+
+;light
+20,white
+15,ivory
+10,cream-colored
+6,sand-colored
+6,tan
+6,taupe
+6,beige
+6,light blue
+6,light pink
+6,pale yellow
+6,mint
+3,sea green
+6,peach
+6,lavender
+6,light gray
+3,rose
+3,cyan
+3,khaki
+1,pastel pink
+1,pastel blue
+1,pastel yellow
+1,pastel green
+1,periwinkle
+1,mauve
+1,off-white
+
+;lightCap
+1,[light]
+
+;metallic
+5,silver
+5,gold
+3,copper
+3,steel grey
+3,bronze
+2,silvery
+2,golden
+2,steely
+1,metallic purple
+1,metallic green
+1,metallic red
+1,metallic blue
+1,metallic orange
+1,metallic yellow
+
+;metallicCap
+1,[metallic]
+
+;jeweltone
+1,amber
+1,amethyst
+1,aquamarine
+1,beryl
+1,emerald
+1,pearl
+1,ruby
+1,sapphire
+1,topaz
+1,turquoise
+
+;jeweltoneCap
+1,[jeweltone]
+
+;hues
+3,reddish
+4,golden
+4,white
+4,bluish
+3,greenish
+2,yellowish
+2,purplish
+2,orangeish
+1,lavender
+1,crimson
+
+;goblinoid
+5,[green] green
+5,[grey] green
+5,[green] yellow
+4,[green] brown
+3,[yellow] yellow
+3,[brown] brown
+2,[grey] grey
+2,[green] grey
+1,[yellow] red
+1,[grey] red
+1,[brown] red
+
+;green
+1,olive
+1,viridian
+1,chartreuse
+1,emerald
+1,lime
+1,pistachio
+1,jade
+1,celadon
+1,umber
+
+;red
+1,burgundy
+1,cerise
+1,claret
+1,cinnabar
+1,erythraean 
+1,crimson
+1,maroon
+1,oxblood
+1,rose
+1,ruby
+1,scarlet
+1,vermilion
+
+;brown
+1,beige
+1,bronze
+1,coffee
+1,caramel
+1,cinnamon
+1,copper
+1,ecru
+1,hazel
+1,tan
+1,sarcoline
+1,ochre 
+
+;grey
+1,hoary
+1,charcoal
+1,taupe
+1,dun
+1,granite
+1,slate
+1,albicant
+
+;yellow
+1,amber
+1,golden
+1,saffron
+1,tawny
+1,xanthic
+1,khaki
+1,isabelline
+
+;huesCap
+1,[hues]
+
+;all
+1,[bright]
+1,[dull]
+1,[dark]
+1,[light]
+1,[metallic]
+1,[jeweltone]
+1,[hues]
+
+;allCap
+1,[brightCap]
+1,[dullCap]
+1,[darkCap]
+1,[lightCap]
+1,[metallicCap]
+1,[huesCap]
+
+;ss
+
+;sm
+
+;se
+
+;o
+1,obscure
+
+;m
+1,medium
+
+;color in color
+1,[ss]000[sm]black[se]
+1,[ss]003[sm][o] weak blue[se]
+1,[ss]006[sm][o] dull blue[se]
+1,[ss]009[sm]dark faded blue[se]
+1,[ss]00c[sm]dark hard blue[se]
+1,[ss]00f[sm]blue[se]
+1,[ss]030[sm][o] weak green[se]
+1,[ss]033[sm][o] weak cyan[se]
+1,[ss]036[sm][o] dull azure[se]
+1,[ss]039[sm]dark azure-blue[se]
+1,[ss]03c[sm]dark blue-azure[se]
+1,[ss]03f[sm]bluish-azure[se]
+1,[ss]060[sm][o] dull green[se]
+1,[ss]063[sm][o] dull teal[se]
+1,[ss]066[sm][o] dull cyan[se]
+1,[ss]069[sm]dark azure-cyan[se]
+1,[ss]06c[sm]dark hard azure[se]
+1,[ss]06f[sm]azure-ish-blue[se]
+1,[ss]090[sm]dark faded green[se]
+1,[ss]093[sm]dark teal-green[se]
+1,[ss]096[sm]dark teal-cyan[se]
+1,[ss]099[sm]dark faded cyan[se]
+1,[ss]09c[sm]dark cyan-azure[se]
+1,[ss]09f[sm]azure-ish-cyan[se]
+1,[ss]0c0[sm]dark hard green[se]
+1,[ss]0c3[sm]dark green-teal[se]
+1,[ss]0c6[sm]dark hard teal[se]
+1,[ss]0c9[sm]dark cyan-teal[se]
+1,[ss]0cc[sm]dark hard cyan[se]
+1,[ss]0cf[sm]cyan-ish-azure[se]
+1,[ss]0f0[sm]green[se]
+1,[ss]0f3[sm]greenish-teal[se]
+1,[ss]0f6[sm]teal-ish-green[se]
+1,[ss]0f9[sm]teal-ish-cyan[se]
+1,[ss]0fc[sm]cyan-ish-teal[se]
+1,[ss]0ff[sm]cyan[se]
+1,[ss]300[sm][o] weak red[se]
+1,[ss]303[sm][o] weak magenta[se]
+1,[ss]306[sm][o] dull violet[se]
+1,[ss]30c[sm]dark blue-violet[se]
+1,[ss]30f[sm]bluish-violet[se]
+1,[ss]330[sm][o] weak yellow[se]
+1,[ss]333[sm][o] gray[se]
+1,[ss]336[sm]dark weak blue[se]
+1,[ss]339[sm]dark dull blue[se]
+1,[ss]33c[sm][m] faded blue[se]
+1,[ss]33f[sm]light hard blue[se]
+1,[ss]360[sm][o] dull spring[se]
+1,[ss]363[sm]dark weak green[se]
+1,[ss]366[sm]dark weak cyan[se]
+1,[ss]369[sm]dark dull azure[se]
+1,[ss]36c[sm][m] azure-blue[se]
+1,[ss]36f[sm]light blue-azure[se]
+1,[ss]390[sm]dark spring-ish green[se]
+1,[ss]393[sm]dark dull green[se]
+1,[ss]396[sm]dark dull teal[se]
+1,[ss]399[sm]dark dull cyan[se]
+1,[ss]39c[sm][m] azure-cyan[se]
+1,[ss]39f[sm]light hard azure[se]
+1,[ss]3c0[sm]dark green-spring[se]
+1,[ss]3c3[sm][m] faded green[se]
+1,[ss]3c6[sm][m] teal-green[se]
+1,[ss]3c9[sm][m] teal-cyan[se]
+1,[ss]3cc[sm][m] faded cyan[se]
+1,[ss]3cf[sm]light cyan-azure[se]
+1,[ss]3f0[sm]greenish-spring[se]
+1,[ss]3f3[sm]light hard green[se]
+1,[ss]3f6[sm]light green-teal[se]
+1,[ss]3f9[sm]light hard teal[se]
+1,[ss]3fc[sm]light cyan-teal[se]
+1,[ss]3ff[sm]light hard cyan[se]
+1,[ss]600[sm][o] dull red[se]
+1,[ss]603[sm][o] dull pink[se]
+1,[ss]606[sm][o] dull magenta[se]
+1,[ss]609[sm]dark violet-magenta[se]
+1,[ss]60c[sm]dark hard violet[se]
+1,[ss]630[sm][o] dull orange[se]
+1,[ss]633[sm]dark weak red[se]
+1,[ss]636[sm]dark weak magenta[se]
+1,[ss]639[sm]dark dull violet[se]
+1,[ss]63f[sm]light blue-violet[se]
+1,[ss]660[sm][o] dull yellow[se]
+1,[ss]663[sm]dark weak yellow[se]
+1,[ss]666[sm]dark gray[se]
+1,[ss]669[sm][m] weak blue[se]
+1,[ss]66c[sm]light dull blue[se]
+1,[ss]66f[sm]light faded blue[se]
+1,[ss]690[sm]dark spring-yellow[se]
+1,[ss]693[sm]dark dull spring[se]
+1,[ss]696[sm][m] weak green[se]
+1,[ss]699[sm][m] weak cyan[se]
+1,[ss]69c[sm]light dull azure[se]
+1,[ss]69f[sm]light azure-blue[se]
+1,[ss]6c0[sm]dark hard spring[se]
+1,[ss]6c3[sm][m] spring-ish green[se]
+1,[ss]6c6[sm]light dull green[se]
+1,[ss]6c9[sm]light dull teal[se]
+1,[ss]6cc[sm]light dull cyan[se]
+1,[ss]6cf[sm]light azure-cyan[se]
+1,[ss]6f0[sm]spring-ish-green[se]
+1,[ss]6f3[sm]light green-spring[se]
+1,[ss]6f6[sm]light faded green[se]
+1,[ss]6f9[sm]light teal-green[se]
+1,[ss]6fc[sm]light teal-cyan[se]
+1,[ss]6ff[sm]light faded cyan[se]
+1,[ss]900[sm]dark faded red[se]
+1,[ss]903[sm]dark pink-red[se]
+1,[ss]906[sm]dark pink-magenta[se]
+1,[ss]909[sm]dark faded magenta[se]
+1,[ss]90c[sm]dark magenta-violet[se]
+1,[ss]90f[sm]violet-ish-magenta[se]
+1,[ss]930[sm]dark orange-red[se]
+1,[ss]933[sm]dark dull red[se]
+1,[ss]936[sm]dark dull pink[se]
+1,[ss]939[sm]dark dull magenta[se]
+1,[ss]93c[sm][m] violet-magenta[se]
+1,[ss]93f[sm]light hard violet[se]
+1,[ss]960[sm]dark orange-yellow[se]
+1,[ss]963[sm]dark dull orange[se]
+1,[ss]966[sm][m] weak red[se]
+1,[ss]969[sm][m] weak magenta[se]
+1,[ss]96c[sm]light dull violet[se]
+1,[ss]990[sm]dark faded yellow[se]
+1,[ss]993[sm]dark dull yellow[se]
+1,[ss]996[sm][m] weak yellow[se]
+1,[ss]999[sm]light gray[se]
+1,[ss]99c[sm]light weak blue[se]
+1,[ss]99f[sm]pale dull blue[se]
+1,[ss]9c0[sm]dark yellow-spring[se]
+1,[ss]9c3[sm][m] spring-yellow[se]
+1,[ss]9c6[sm]light dull spring[se]
+1,[ss]9c9[sm]light weak green[se]
+1,[ss]9cc[sm]light weak cyan[se]
+1,[ss]9cf[sm]pale dull azure[se]
+1,[ss]9f0[sm]spring-ish-yellow[se]
+1,[ss]9f3[sm]light hard spring[se]
+1,[ss]9f6[sm]light spring-ish green[se]
+1,[ss]9f9[sm]pale dull green[se]
+1,[ss]9fc[sm]pale dull teal[se]
+1,[ss]9ff[sm]pale dull cyan[se]
+1,[ss]c00[sm]dark hard red[se]
+1,[ss]c03[sm]dark red-pink[se]
+1,[ss]c06[sm]dark hard pink[se]
+1,[ss]c09[sm]dark magenta-pink[se]
+1,[ss]c0c[sm]dark hard magenta[se]
+1,[ss]c0f[sm]magenta-ish-violet[se]
+1,[ss]c30[sm]dark red-orange[se]
+1,[ss]c33[sm][m] faded red[se]
+1,[ss]c36[sm][m] pink-red[se]
+1,[ss]c39[sm][m] pink-magenta[se]
+1,[ss]c3c[sm][m] faded magenta[se]
+1,[ss]c3f[sm]light magenta-violet[se]
+1,[ss]c60[sm]dark hard orange[se]
+1,[ss]c63[sm][m] orange-red[se]
+1,[ss]c66[sm]light dull red[se]
+1,[ss]c69[sm]light dull pink[se]
+1,[ss]c6c[sm]light dull magenta[se]
+1,[ss]c6f[sm]light violet-magenta[se]
+1,[ss]c90[sm]dark yellow-orange[se]
+1,[ss]c93[sm][m] orange-yellow[se]
+1,[ss]c96[sm]light dull orange[se]
+1,[ss]c99[sm]light weak red[se]
+1,[ss]c9c[sm]light weak magenta[se]
+1,[ss]c9f[sm]pale dull violet[se]
+1,[ss]cc0[sm]dark hard yellow[se]
+1,[ss]cc3[sm][m] faded yellow[se]
+1,[ss]cc6[sm]light dull yellow[se]
+1,[ss]cc9[sm]light weak yellow[se]
+1,[ss]ccc[sm]pale gray[se]
+1,[ss]ccf[sm]pale weak blue[se]
+1,[ss]cf0[sm]yellowish-spring[se]
+1,[ss]cf3[sm]light yellow-spring[se]
+1,[ss]cf6[sm]light spring-yellow[se]
+1,[ss]cf9[sm]pale dull spring[se]
+1,[ss]cfc[sm]pale weak green[se]
+1,[ss]cff[sm]pale weak cyan[se]
+1,[ss]f00[sm]red[se]
+1,[ss]f03[sm]reddish-pink [se]
+1,[ss]f06[sm]pinkish-red[se]
+1,[ss]f09[sm]pinkish-magenta[se]
+1,[ss]f0c[sm]magenta-ish-pink[se]
+1,[ss]f0f[sm]magenta[se]
+1,[ss]f30[sm]reddish-orange[se]
+1,[ss]f33[sm]light hard red[se]
+1,[ss]f36[sm]light red-pink[se]
+1,[ss]f39[sm]light hard pink[se]
+1,[ss]f3c[sm]light magenta-pink[se]
+1,[ss]f3f[sm]light hard magenta[se]
+1,[ss]f60[sm]orangish-red[se]
+1,[ss]f63[sm]light red-orange[se]
+1,[ss]f66[sm]light faded red[se]
+1,[ss]f69[sm]light pink-red[se]
+1,[ss]f6c[sm]light pink-magenta[se]
+1,[ss]f6f[sm]light faded magenta[se]
+1,[ss]f90[sm]orangish-yellow[se]
+1,[ss]f93[sm]light hard orange[se]
+1,[ss]f96[sm]light orange-red[se]
+1,[ss]f99[sm]pale dull red[se]
+1,[ss]f9c[sm]pale dull pink[se]
+1,[ss]f9f[sm]pale dull magenta[se]
+1,[ss]fc0[sm]yellowish-orange[se]
+1,[ss]fc3[sm]light yellow-orange[se]
+1,[ss]fc6[sm]light orange-yellow[se]
+1,[ss]fc9[sm]pale dull orange[se]
+1,[ss]fcc[sm]pale weak red[se]
+1,[ss]fcf[sm]pale weak magenta[se]
+1,[ss]ff0[sm]yellow[se]
+1,[ss]ff3[sm]light hard yellow[se]
+1,[ss]ff6[sm]light faded yellow[se]
+1,[ss]ff9[sm]pale dull yellow[se]
+1,[ss]ffc[sm]pale weak yellow[se]
+1,[ss]fff[sm]white[se]
+
+
+;color in color simple
+1,[ss]000[sm]black[se]
+1,[ss]008[sm]navy[se]
+1,[ss]00f[sm]blue[se]
+1,[ss]080[sm]green[se]
+1,[ss]088[sm]teal[se]
+1,[ss]0f0[sm]lime[se]
+1,[ss]0ff[sm]aqua[se]
+1,[ss]800[sm]maroon[se]
+1,[ss]808[sm]purple[se]
+1,[ss]880[sm]olive[se]
+1,[ss]888[sm]gray[se]
+1,[ss]ccc[sm]silver[se]
+1,[ss]f00[sm]red[se]
+1,[ss]f0f[sm]fuchsia[se]
+1,[ss]ff0[sm]yellow[se]
+1,[ss]fff[sm]white[se]
+
+;eye
+5,amber
+1,black
+10,light blue
+10,dark blue
+10,blue-grey
+30,light brown
+20,brown
+30,dark brown
+10,gray
+10,gray-green
+10,green
+10,hazel
+5,red
+2,violet
+2,yellow
+
+;hair
+30,black
+10,brown
+10,light brown
+10,dark brown
+10,blonde
+5,red
+15,white
+15,gray
+1,golden
+1,silver
+1,bronze
+1,flaxen
+1,tawny
+1,ginger
+1,raven
+1,platinum blonde
+1,auburn
+1,strawberry blonde
+1,sandy
+1,reddish-brown
+1,jet black
