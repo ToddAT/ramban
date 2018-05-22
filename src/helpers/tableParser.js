@@ -5,6 +5,10 @@ const getRandomTableEntry = (table) => {
 	let len = table.length,
     	rnd;
 
+	if(len < 1) {
+		return '';
+	}
+
 	if(len < 2) {
 		return table[0];
 	}
@@ -15,29 +19,44 @@ const getRandomTableEntry = (table) => {
 
 const getTable = (id) => {
 	let ids = id.toLowerCase().split('.'),
-		outerTable = tables[ids[0]],
+		outerTable = null, innerTable = null;
+
+	outerTable = tables[ids[0]];
+
+	if(outerTable) {
 		innerTable = outerTable[ids[1]];
+	} else {
+		console.log('could not find table...', id);
+	}
 
 	return innerTable;
 }
 
 const parseTableEntry = (entry, tableID) => {
-	let regex = /\[(\w+)\]/g,
-		rgx, newEntry = entry;
+	let rgxTableCall = /(?:\[)([^\[\]]+)(?:\])/g,
+		newEntry = entry, rgx, table;
 
-	while ((rgx = regex.exec(entry)) !== null) {
-		let match = rgx[1], tableName = match.toLowerCase(),
-			subEntry, parsedSubEntry;
+	while ((rgx = rgxTableCall.exec(entry)) !== null) {
+		let match = rgx[1],
+			tableName = match.toLowerCase(),
+			parsedSubEntry = '', subEntry;
 
-		if(dice.patternDiceMatch.test(tableName)) {
+		if(dice.isDiceOrRange(tableName)) {
 			parsedSubEntry = dice.roll(tableName);
+			console.log('parsing table, found dice entry...', tableName, parsedSubEntry);
 		} else {
 			if(tableName.indexOf('.') < 0) {
 				tableName = tableID + '.' + tableName;
+			} else {
+				tableID = tableName.split('.')[0];
 			}
 
-			subEntry = getRandomTableEntry(getTable(tableName));
-			parsedSubEntry = parseTableEntry(subEntry, tableID);
+			table = getTable(tableName);
+
+			if(table) {
+				subEntry = getRandomTableEntry(getTable(tableName));
+				parsedSubEntry = parseTableEntry(subEntry, tableID);
+			}
 		}
 
 		newEntry = newEntry.replace('[' + match + ']', parsedSubEntry);
@@ -46,7 +65,7 @@ const parseTableEntry = (entry, tableID) => {
 	return newEntry;
 }
 
-export const generateRandomTableEntry = (t = 'Swords.SwordStart') => {
+export const generateRandomTableEntry = (t = 'Swords.Main') => {
 	t = t.toLowerCase();
 
 	try {

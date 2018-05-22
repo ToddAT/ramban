@@ -1,12 +1,44 @@
 
-export const patternDiceMatch = /(\d+)d(\d+)/g;
+//export const patternDiceMatch = /(\d+)d(\d+)/g;
+export const patternDiceMatch = /\d+d\d+([\+\-\*\-]?\d+)?|\d+\-\d+/g;
+
+export const isDiceRoll = (str) => {
+	let pattDiceRoll = /(\d+)d(\d+)/g;
+
+	return pattDiceRoll.test(str);
+}
+
+export const isRange = (str) => {
+	let pattRange = /[0-9]+\-{1}[0-9]+/g;
+
+	return pattRange.test(str);
+}
+
+export const isDiceOrRange = (str) => isDiceRoll(str) || isRange(str);
+
+export const getRange = (strRange) => {
+	let pattern = /^(\d+)\-{1}(\d+$)/g,
+		matches = pattern.exec(strRange);
+
+	if(!matches) return null;
+
+	return {
+		'min': parseInt(matches[1]),
+		'max': parseInt(matches[2])
+	}
+}
 
 export const getRandomInt = (max) => {
   return Math.floor(Math.random() * Math.floor(max));
 };
 
 export const randomArbitraryDie = (min, max) => {
-	return () => Math.floor(Math.random() * (max - min) + min)
+	return () => {
+		let ceiling = max - min,
+			rand = Math.random() * (max - min);
+
+		return Math.floor(rand) + min;
+	}
 }
 
 export const randomDie = (f) => {
@@ -17,6 +49,8 @@ export const randomDie = (f) => {
 		for(let i=0; i<n; i++) {
 			s+= d();
 		}
+
+		//console.log('dice', {'faces': f, 'rolls': n, 'result': s});
 
 		return s;
 	}
@@ -34,12 +68,13 @@ export const d100 = randomDie(100);
 export const coinToss = () => d2(1) > 1;
 
 const parseDice = (dice) => {
-	let patternDice = /^(\d+)d(\d+)$/g,
-  		test = patternDice.exec(dice), sum = 0;
+	let sum = 0, rollResults;
   
 	try {
-	    if(test) {
-			let rolls = parseInt(test[1]),
+	    if(isDiceRoll(dice)) {
+			let patternDice = /^(\d+)d(\d+)$/g,
+				test = patternDice.exec(dice),
+				rolls = parseInt(test[1]),
 				faces = parseInt(test[2]),
 				die = randomDie(faces),
 				rollResults = new Array(rolls);
@@ -49,6 +84,15 @@ const parseDice = (dice) => {
 			}
 
 			rollResults.map(roll => sum += roll)
+		} else if(isRange(dice)) {
+			let rangeSpread = getRange(dice),
+				rangeDie;
+
+			if(rangeSpread) {
+				console.log('found range...', rangeSpread.min, rangeSpread.max);
+				rangeDie = randomArbitraryDie(rangeSpread.min, rangeSpread.max);
+				sum = rangeDie(1);
+			}
 		} else {
 			dice = parseInt(dice);
 
@@ -59,18 +103,37 @@ const parseDice = (dice) => {
 	} catch(e) {
 		console.log(e.message);
 	}
-	
+
 	return sum;
 }
 
 export const roll = (dice) => {
-	let symbols = /([+\-\*\\])/,
+	let symbols = /^([+\-\*\\])$/,
+		//patternDice = /\d+d{1}\d+/g,
+		//patternRange = /^(\d+)\-{1}(\d+$)/g,
 		operators = [], results = [], sum = 0;
 
-	dice = dice.split(symbols);
+	/*
+	if(patternRange.test(dice)) {
+		range = patternRange.exec(dice);
+		console.log('calculating range...', range);
+		if(range) {
+			min = range[1];
+			max = range[2];
+			sum = randomArbitraryDie(min, max)(1);
+			return sum;
+		} else {
+			return dice;
+		}
+	}
+	*/
+
+	dice = isDiceRoll(dice) ? dice.split(symbols) : [ dice ];
   
 	dice.map((d) => {
-		if(symbols.test(d)) {
+		console.log('found...', d);
+
+		if(!isRange(d) && symbols.test(d)) {
 			operators.push(d);
 		} else {
 			results.push(parseDice(d));
